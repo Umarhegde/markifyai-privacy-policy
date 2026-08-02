@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkifyAI - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            background: #0f1117;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        header {
+            text-align: center;
+            padding: 48px 24px;
+            background: linear-gradient(135deg, #0a2e3d 0%, #0e9aa7 100%);
+            border-radius: 0 0 32px 32px;
+        }
+        header h1 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        header p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+        }
+        h2 {
+            color: #0ec5a4;
+            font-size: 1.35rem;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1a2a3a;
+        }
+        h3 {
+            color: #0e9aa7;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+        p { margin-bottom: 14px; color: #c0c0c0; }
+        ul {
+            margin: 12px 0 20px 24px;
+            color: #c0c0c0;
+        }
+        ul li {
+            margin-bottom: 8px;
+            padding-left: 4px;
+        }
+        .card {
+            background: #1a1f2e;
+            border: 1px solid #2a3040;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .flow-diagram {
+            background: linear-gradient(135deg, #0a1a2a, #122a35);
+            border: 1px solid #0e9aa740;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .flow-step {
+            display: inline-block;
+            background: #0e9aa720;
+            border: 1px solid #0e9aa740;
+            border-radius: 12px;
+            padding: 10px 16px;
+            margin: 6px;
+            font-size: 0.9rem;
+            color: #0ec5a4;
+        }
+        .flow-arrow {
+            display: inline-block;
+            color: #0e9aa7;
+            font-size: 1.2rem;
+            margin: 0 4px;
+        }
+        .badge-green {
+            display: inline-block;
+            background: #00c85320;
+            color: #00c853;
+            border: 1px solid #00c85340;
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 12px;
+        }
+        .contact {
+            background: linear-gradient(135deg, #0a2e3d 0%, #122a35 100%);
+            border: 1px solid #0e9aa740;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 32px 0;
+            text-align: center;
+        }
+        .contact a {
+            color: #0ec5a4;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 32px 0;
+            color: #666;
+            font-size: 0.85rem;
+            border-top: 1px solid #1a2a3a;
+            margin-top: 32px;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 24px 16px; }
+            header { padding: 32px 16px; }
+            header h1 { font-size: 1.5rem; }
+            .flow-step { display: block; margin: 8px auto; max-width: 250px; }
+            .flow-arrow { display: block; margin: 4px auto; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🔒 MarkifyAI Privacy Policy</h1>
+    <p>Last updated: July 2026</p>
+</header>
+
+<div class="container">
+
+    <h2>Overview</h2>
+    <p>
+        MarkifyAI is an AI-powered, 100% offline document-to-Markdown converter for Android.
+        We are committed to protecting your privacy. This privacy policy explains how we handle
+        your data when you use our application.
+    </p>
+    <p>
+        <strong>The short version:</strong> Your documents never leave your device. All file
+        conversions happen entirely on your phone using local processing engines. We do not
+        collect, store, or transmit any of your documents or personal data to any server.
+    </p>
+
+    <h2>Data Collection</h2>
+    <div class="card">
+        <h3>What We Do NOT Collect</h3>
+        <ul>
+            <li>We do <strong>not</strong> collect, store, or transmit your documents to any server</li>
+            <li>We do <strong>not</strong> track your file contents, file names, or conversion history</li>
+            <li>We do <strong>not</strong> use analytics or third-party tracking SDKs for user behavior</li>
+            <li>We do <strong>not</strong> require account creation, login, or personal information</li>
+        </ul>
+        <h3>What Is Stored Locally on Your Device</h3>
+        <ul>
+            <li>Conversion history, editor drafts, projects, and custom prompt templates are stored in a local Room database on your device only</li>
+            <li>User preferences (theme, auto-save setting) are stored locally via Android DataStore</li>
+            <li>Converted Markdown and exported files can be saved to your device's <code>Documents/MarkifyAI</code> folder</li>
+            <li>All locally stored database logs and files are deleted when you uninstall the app</li>
+        </ul>
+    </div>
+
+    <h2>Document Processing</h2>
+    <p>
+        All document conversion is performed <strong>100% on your device</strong> using the following
+        offline processing engines:
+    </p>
+    <ul>
+        <li><strong>Apache PDFBox</strong> — PDF text extraction (offline, open source)</li>
+        <li><strong>Apache POI</strong> — Microsoft Office document parsing: DOCX, XLSX, PPTX (offline, open source)</li>
+        <li><strong>Google ML Kit</strong> — On-device optical character recognition for images in Latin, Devanagari, Chinese, Japanese and Korean scripts. All recognition models are bundled inside the app and run entirely on your device — no image or text is ever uploaded, and no model is downloaded at runtime.</li>
+        <li><strong>Jsoup</strong> — HTML parsing for URL-to-Markdown conversion (open source)</li>
+        <li><strong>Java ZipInputStream</strong> — ZIP archive extraction and batch conversion (standard Java library)</li>
+    </ul>
+    <p>None of these document processing libraries collect or transmit any user data.</p>
+
+    <h2>Data Flow</h2>
+    <div class="flow-diagram">
+        <div class="flow-step">📁 Your File</div>
+        <span class="flow-arrow">→</span>
+        <div class="flow-step">🔒 On-Device Processing</div>
+        <span class="flow-arrow">→</span>
+        <div class="flow-step">📝 Markdown Output</div>
+        <span class="flow-arrow">→</span>
+        <div class="flow-step">💾 Save to Device</div>
+        <span class="flow-arrow">→</span>
+        <div class="flow-step">📤 Your Choice</div>
+        <br>
+        <span class="badge-green">✅ No cloud path exists — your data stays on your device at every step</span>
+    </div>
+
+    <h2>Advertising</h2>
+    <div class="card">
+        <p>
+            MarkifyAI is free and supported by advertising. We use <strong>Google AdMob</strong> to display
+            banner, interstitial, and app open advertisements. This is the only third-party service that
+            may access the internet during app usage.
+        </p>
+        <p>
+            AdMob may collect certain device information, such as the advertising identifier (Advertising ID)
+            and general device metadata, in accordance with
+            <a href="https://policies.google.com/privacy" style="color: #0ec5a4;">Google's Privacy Policy</a>.
+        </p>
+        <p>
+            <strong>Consent:</strong> If you are in a region where consent is required (such as the EEA or UK),
+            the app shows Google's consent form on first launch before any ads are requested. You can change
+            your choices at any time via <strong>Settings → Ad Privacy Options</strong> inside the app.
+        </p>
+        <p>
+            <strong>Important:</strong> AdMob does <strong>not</strong> have access to your documents,
+            file contents, or conversion history. Ad serving is completely separate from document processing.
+        </p>
+    </div>
+
+    <h2>App Permissions</h2>
+    <div class="card">
+        <ul>
+            <li><strong>INTERNET</strong> — Required for URL-to-Markdown conversion (fetching web pages) and displaying advertisements</li>
+            <li><strong>READ_EXTERNAL_STORAGE</strong> — Access files you select for conversion (Android 12 and below)</li>
+            <li><strong>WRITE_EXTERNAL_STORAGE</strong> — Save converted files to Documents/MarkifyAI folder (Android 9 and below)</li>
+            <li><strong>POST_NOTIFICATIONS</strong> — Show conversion progress notifications (optional)</li>
+        </ul>
+    </div>
+
+    <h2>Data Retention &amp; Deletion</h2>
+    <ul>
+        <li>Conversion history, editor drafts, projects, and custom prompts are retained locally until you choose to delete them</li>
+        <li>Clear individual history entries, drafts, or projects from their respective workspace screens</li>
+        <li>Clear all local database logs from Settings</li>
+        <li>Uninstalling the app removes all locally stored database logs and documents completely</li>
+        <li>We have no server-side data — everything is stored locally on your device</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>
+        MarkifyAI does not knowingly collect data from children under the age of 13.
+        The app does not require account creation or any personal information.
+        All processing is local and does not involve user identification.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+        We may update this privacy policy from time to time. Any changes will be reflected
+        on this page with an updated "Last updated" date. We encourage you to review this
+        policy periodically.
+    </p>
+
+    <div class="contact">
+        <h3>Questions?</h3>
+        <p>If you have any questions about this privacy policy, please contact us at:</p>
+        <a href="mailto:markifyai26@gmail.com">📧 markifyai26@gmail.com</a>
+    </div>
+
+    <footer>
+        <p>© 2026 MarkifyAI. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
